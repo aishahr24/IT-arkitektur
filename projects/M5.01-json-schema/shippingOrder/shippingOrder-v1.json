@@ -1,0 +1,19 @@
+
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Shipping Order",
+  "type": "object",
+  "required": ["orderId", "deliveryAddress"],
+  "properties": {
+    "orderId": { "type": "string" },
+    "deliveryAddress": {
+      "type": "object",
+      "required": ["street", "city", "postalCode"],
+      "properties": {
+        "street": { "type": "string" },
+        "city": { "type": "string" },
+        "postalCode": { "type": "string" }
+      }
+    }
+  }
+}

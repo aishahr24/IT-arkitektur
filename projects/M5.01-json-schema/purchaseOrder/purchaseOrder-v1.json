@@ -1,0 +1,29 @@
+
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Purchase Order",
+  "type": "object",
+  "required": ["id", "customer", "items"],
+  "properties": {
+    "id": { "type": "string" },
+    "customer": {
+      "type": "object",
+      "required": ["name", "email"],
+      "properties": {
+        "name": { "type": "string" },
+        "email": { "type": "string", "format": "email" }
+      }
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["productId", "quantity"],
+        "properties": {
+          "productId": { "type": "string" },
+          "quantity": { "type": "integer", "minimum": 1 }
+        }
+      }
+    }
+  }
+}

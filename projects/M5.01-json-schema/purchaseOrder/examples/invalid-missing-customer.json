@@ -1,0 +1,10 @@
+
+{
+  "id": "PO12345",
+  "items": [
+    {
+      "productId": "P001",
+      "quantity": 2
+    }
+  ]
+}

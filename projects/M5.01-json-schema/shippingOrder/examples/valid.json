@@ -1,0 +1,9 @@
+
+{
+  "orderId": "PO12345",
+  "deliveryAddress": {
+    "street": "Main Street 1",
+    "city": "Aarhus",
+    "postalCode": "8000"
+  }
+}

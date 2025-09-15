@@ -1,0 +1,14 @@
+
+{
+  "id": "PO12345",
+  "customer": {
+    "name": "John Doe",
+    "email": "john@example.com"
+  },
+  "items": [
+    {
+      "productId": "P001",
+      "quantity": 2
+    }
+  ]
+}
